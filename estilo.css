@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#barra_navegacao{
+    background-image: linear-gradient(#24013b, #4b0a77, #7e09cc);
+    padding: 20px 0;
+}
+    
+#barra_navegacao a{
+  color: #fff;
+  text-decoration: none;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  padding: 20px;
+}
+#barra_navegacao a:hover{
+    background-color: #a03ce2;
+    transition: 0.4s all ;;
+
+}
+#barra_navegacao ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+
+#barra_navegacao nav{
+    display: flex;
+    justify-content: center;
+}
+/*-----------------------------------------------cabeçalho------------------------------------*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #272121;
+    color: #fff;
+}
+
+.namebold{
+    color: #8b0ae0;
+}
+.curriculobold{
+    color: #8b0ae0; 
+}
+.backbold{
+    color: #8b0ae0;  
+}
+
+.content_descript{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 60px;
+}
+#sobre{
+    border-right: solid 3px #580490;
+    padding: 80px;
+}
+#sobre p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.cv_me{
+   width: 7%;
+   height: 50px;
+   margin-left: 70px;
+}
+.cv_me a button{
+    width: 100%;
+    height: 50px;
+    background-color: #a03ce2;
+    border: solid 1px #000;
+    border-radius: 15px;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cv_me a{
+  text-decoration: none; 
+}
+.cv_me button:hover{
+    background-color: #7b05c9;
+}
+/*-----------------------------------------------skills---------------------------------------*/
+#content_skills {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    flex-direction: column;
+    align-items: center;  /* Centraliza verticalmente */
+    margin-top: 150px;
+    background-image: linear-gradient(#24013b, #4b0a77, #7e09cc);
+    padding: 50px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.icons i {
+    font-size: 150px;
+}
+
+/* Estilizando a seção de projetos */
+#projects {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Espaço entre os itens */
+    margin-top: 150px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #5706ee, #8a2be2);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito expansivo ao passar o mouse */
+.project-item::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease-in-out;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.project-item:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.project-item:hover {
+    background: linear-gradient(45deg, #8a2be2, #5706ee);
+    transform: scale(1.1);
+}
+/*-----------------------------------------------------------------------------div contatos-----------------------------------------------------------------*/
+#contatos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    padding: 20px 0;
+}
+
+#contatos h1 {
+    text-align: center;
+    background-image: linear-gradient(#8a2be2, #5706ee);
+    border-radius: 25px;
+    width: 500px;
+    padding: 15px;
+    color: white;
+}
+
+.contatos_icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+    gap: 100px;
+}
+
+.contatos_icons a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Define a cor padrão dos ícones */
+.contatos_icons i {
+    font-size: 80px;
+    color: #d4b1f3; /* Roxo vibrante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.contatos_icons a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
+}
+
+/* Muda a cor ao passar o mouse */
+.contatos_icons a:hover i {
+    color: #5706ee; /* Tom mais escuro do gradiente */
+}
+
+/*--------------------------------------------------------------------footer--------------------------------------------------*/
+
+#rodape {
+    background: linear-gradient(to right, #0b0114, #2b0275,#5903a5);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+
+#rodape p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.botao-ancora {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #8a2be2, #5706ee);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 20px;  /* Ajuste a posição à direita */
+    bottom: 20px; /* Mantém um espaço da borda inferior */
+}
+
+.botao-ancora:hover {
+    background: linear-gradient(45deg, #5706ee, #8a2be2);
+}
+
+#rodape {
+    position: relative; /* Necessário para alinhar o botão dentro do rodapé */
+    background: linear-gradient(to right, #0b0114, #2b0275,#5903a5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
