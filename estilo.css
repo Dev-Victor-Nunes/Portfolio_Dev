@@ -4,89 +4,100 @@
     box-sizing: border-box;
 }
 
-#barra_navegacao{
+#barra_navegacao {
     background-image: linear-gradient(#24013b, #4b0a77, #7e09cc);
     padding: 20px 0;
 }
-    
-#barra_navegacao a{
-  color: #fff;
-  text-decoration: none;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 25px;
-  padding: 20px;
-}
-#barra_navegacao a:hover{
-    background-color: #a03ce2;
-    transition: 0.4s all ;;
 
+#barra_navegacao a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    padding: 20px;
 }
-#barra_navegacao ul li{
+
+#barra_navegacao a:hover {
+    background-color: #a03ce2;
+    transition: 0.4s all;
+}
+
+#barra_navegacao ul li {
     display: inline-block;
     padding: 0 50px;
 }
 
-#barra_navegacao nav{
+#barra_navegacao nav {
     display: flex;
     justify-content: center;
 }
+
 /*-----------------------------------------------cabeçalho------------------------------------*/
-body{
+body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #272121;
     color: #fff;
 }
 
-.namebold{
+.namebold {
     color: #8b0ae0;
 }
-.curriculobold{
-    color: #8b0ae0; 
-}
-.backbold{
-    color: #8b0ae0;  
+
+.curriculobold {
+    color: #8b0ae0;
 }
 
-.content_descript{
+.backbold {
+    color: #8b0ae0;
+}
+
+.content_descript {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     gap: 60px;
 }
-#sobre{
+
+#sobre {
     border-right: solid 3px #580490;
     padding: 80px;
 }
-#sobre p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+#sobre p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
-.cv_me{
-   width: 7%;
-   height: 50px;
-   margin-left: 70px;
+
+.cv_me {
+    width: 7%;
+    height: 50px;
+    margin-left: 70px;
 }
-.cv_me a button{
+
+.cv_me a button {
     width: 100%;
     height: 50px;
     background-color: #a03ce2;
     border: solid 1px #000;
     border-radius: 15px;
     color: #fff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.cv_me a{
-  text-decoration: none; 
+
+.cv_me a {
+    text-decoration: none;
 }
-.cv_me button:hover{
+
+.cv_me button:hover {
     background-color: #7b05c9;
 }
+
 /*-----------------------------------------------skills---------------------------------------*/
 #content_skills {
     display: flex;
-    justify-content: center;  /* Centraliza horizontalmente */
+    justify-content: center;
     flex-direction: column;
-    align-items: center;  /* Centraliza verticalmente */
+    align-items: center;
     margin-top: 150px;
     background-image: linear-gradient(#24013b, #4b0a77, #7e09cc);
     padding: 50px 0;
@@ -107,7 +118,7 @@ body{
 #projects {
     display: flex;
     flex-direction: row;
-    gap: 50px; /* Espaço entre os itens */
+    gap: 50px;
     margin-top: 150px;
 }
 
@@ -128,7 +139,6 @@ body{
     overflow: hidden;
 }
 
-/* Efeito expansivo ao passar o mouse */
 .project-item::before {
     position: absolute;
     top: 50%;
@@ -149,6 +159,7 @@ body{
     background: linear-gradient(45deg, #8a2be2, #5706ee);
     transform: scale(1.1);
 }
+
 /*-----------------------------------------------------------------------------div contatos-----------------------------------------------------------------*/
 #contatos {
     display: flex;
@@ -186,34 +197,30 @@ body{
     padding: 10px;
 }
 
-/* Define a cor padrão dos ícones */
 .contatos_icons i {
     font-size: 80px;
-    color: #d4b1f3; /* Roxo vibrante */
+    color: #d4b1f3;
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .contatos_icons a:hover {
     transform: scale(1.2);
     box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
 }
 
-/* Muda a cor ao passar o mouse */
 .contatos_icons a:hover i {
-    color: #5706ee; /* Tom mais escuro do gradiente */
+    color: #5706ee;
 }
 
 /*--------------------------------------------------------------------footer--------------------------------------------------*/
-
 #rodape {
-    background: linear-gradient(to right, #0b0114, #2b0275,#5903a5);
+    background: linear-gradient(to right, #0b0114, #2b0275, #5903a5);
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
-
+    position: relative;
 }
 
 #rodape p {
@@ -232,21 +239,95 @@ body{
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
     position: absolute;
-    right: 20px;  /* Ajuste a posição à direita */
-    bottom: 20px; /* Mantém um espaço da borda inferior */
+    right: 20px;
+    bottom: 20px;
 }
 
 .botao-ancora:hover {
     background: linear-gradient(45deg, #5706ee, #8a2be2);
 }
 
-#rodape {
-    position: relative; /* Necessário para alinhar o botão dentro do rodapé */
-    background: linear-gradient(to right, #0b0114, #2b0275,#5903a5);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
-}
+/* -------------------- RESPONSIVIDADE PARA TELAS MENORES -------------------- */
+@media (max-width: 768px) {
+    .content_descript {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
 
+    #sobre {
+        border-right: none;
+        border-bottom: solid 3px #580490;
+        padding: 20px;
+    }
+
+    #sobre p {
+        font-size: 16px;
+    }
+
+    .content_descript img {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 28px !important;
+        margin: 0 10px;
+    }
+
+    h2, h3 {
+        font-size: 22px !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .cv_me {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .icons i {
+        font-size: 70px;
+    }
+
+    #projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project-item {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #contatos h1 {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contatos_icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .contatos_icons i {
+        font-size: 50px;
+    }
+
+    .botao-ancora {
+        position: static;
+        margin-top: 20px;
+    }
+}
