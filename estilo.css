@@ -248,7 +248,32 @@ body {
 }
 
 /* -------------------- RESPONSIVIDADE PARA TELAS MENORES -------------------- */
+/* -------------------- RESPONSIVIDADE PARA TELAS MENORES -------------------- */
 @media (max-width: 768px) {
+    /* Manter NAVBAR horizontal */
+    #barra_navegacao nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #barra_navegacao ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #barra_navegacao ul li {
+        padding: 10px 20px;
+    }
+
+    #barra_navegacao a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* Seção de apresentação */
     .content_descript {
         flex-direction: column;
         align-items: center;
@@ -284,11 +309,13 @@ body {
         font-size: 16px;
     }
 
+    /* Botão CV */
     .cv_me {
         width: 80%;
         margin: 20px auto;
     }
 
+    /* Ícones de skills */
     .icons {
         flex-direction: row;
         flex-wrap: wrap;
@@ -299,6 +326,7 @@ body {
         font-size: 70px;
     }
 
+    /* Projetos */
     #projects {
         flex-direction: column;
         align-items: center;
@@ -310,6 +338,7 @@ body {
         font-size: 16px;
     }
 
+    /* Contatos */
     #contatos h1 {
         width: 90%;
         font-size: 20px;
@@ -326,8 +355,10 @@ body {
         font-size: 50px;
     }
 
+    /* Rodapé e botão "voltar ao topo" */
     .botao-ancora {
         position: static;
         margin-top: 20px;
     }
 }
+
