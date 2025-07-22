@@ -248,7 +248,7 @@ body {
 }
 
 /* -------------------- RESPONSIVIDADE PARA TELAS MENORES -------------------- */
-/* -------------------- RESPONSIVIDADE PARA TELAS MENORES -------------------- */
+
 @media (max-width: 768px) {
     /* Manter NAVBAR horizontal */
     #barra_navegacao nav {
